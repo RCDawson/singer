@@ -1,10 +1,68 @@
-html, #services { background:#2d2d2e; color:#ededed }
-body { background:url("../images/points-bg.png") no-repeat 50% 0; }
-#main, #hero, #services div:first-child, #nav, #footer { width:978px; margin:0 auto; }
-#main, #services { margin-bottom:1.66667em }
-#logo img { width:360px }
-#nav { width:100%; text-align:center; margin-bottom:1.66667em }
-#nav ul { margin:0 auto; padding:0; display:inline-block; overflow:hidden; }
-#nav li { list-style:none; float:left; display:block; margin:0 2ex; background:#333; color:#efefef; }
-#nav li a { display:block; padding:0 2ex; line-height:2; color:#ededed; text-decoration:none; }
-#nav li a:hover, #nav li a:focus { background:#a55add; text-decoration:underline }
+html, #services {
+    background: #2d2d2e;
+    color: #ededed
+}
+
+body {
+    background: url("../images/points-bg.png") no-repeat 50% 0;
+}
+
+#main, #hero, #services div:first-child, #contact div:first-child, #nav, #footer {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+#main {
+    margin-bottom: 1.66667em
+}
+
+#services, #contact {
+	padding:1.66667em 0;
+	min-height:350px;
+}
+
+#contact {
+	background:#336699;
+}
+#hero {
+    text-align: center;
+}
+
+#logo img {
+    width: 360px
+}
+
+#nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.66667em
+}
+
+#nav ul {
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#nav li {
+    list-style: none;
+    float: left;
+    display: block;
+    margin: 0 2ex;
+    background: #333;
+    color: #efefef;
+}
+
+#nav li a {
+    display: block;
+    padding: 0 2ex;
+    line-height: 2;
+    color: #ededed;
+    text-decoration: none;
+}
+
+#nav li a:hover, #nav li a:focus {
+    background: #a55add;
+    text-decoration: underline
+}
