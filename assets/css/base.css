@@ -1,0 +1,108 @@
+/*
+** CSS Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul { list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '"';
+}
+blockquote, q { quotes: "" ""; }
+
+/*
+** Vertical Rhythm
+*/
+
+html {
+	font-size:62.5%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font:1.4em/1.42857 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+	
+h1 {
+    font-size: 3.42857em;
+    line-height:1.25;
+    margin-bottom:0.41667em;
+}
+
+h2 {
+    font-size: 2.57143em;
+    line-height: 1.111;
+    margin-bottom:0.55555em;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1.07142;
+    margin-bottom: 0.71428em;
+}
+
+h4 {
+    font-size: 1.71428em;
+    line-height: 1.25;
+    margin-bottom: 0.83334em;
+}
+
+h5 {
+	font-size:1.28571em;
+	line-height:1.11111;
+	margin-bottom:1.11111em;
+}
+
+h6 {
+    font-size: 1em;
+    line-height: 1.42857;
+    margin:0 0 1.42857em;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight:400; }
+
+p {
+	line-height:1.42857;
+}
+
+p, ul, ol, pre {
+    margin:0 0 1.42857em;
+}
+
+ol {
+    padding-left:3ex;
+    list-style:decimal;
+    list-style-position:outside;
+}
+
+pre {
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+}
