@@ -68,15 +68,11 @@
 <script src="assets/js/jquery.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        function scrollToAnchor(aid) {
-            var aTag = $('#' + aid);
-            $('html,body').animate({scrollTop: aTag.offset().top},'normal', 'swing');
-        }
-
-        $('a[href^=#]').on('click', function () {
-            var href = $(this).attr('href').replace('#', '')
-            scrollToAnchor(href);
-//            return false;
+        // Smooth scrolling to element IDs
+        $('a[href^=#]:not([href=#])').on('click', function () {
+            var element = $($(this).attr('href'));
+            $('html,body').animate({ scrollTop: element.offset().top },'normal', 'swing');
+            return false;
         });
     });
 </script>
