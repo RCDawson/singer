@@ -47,10 +47,6 @@ html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body {
-	font:1.4em/1.42857 "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-	
 h1 {
     font-size: 3.42857em;
     line-height:1.25;
@@ -88,10 +84,6 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight:400; }
-
-p {
-	line-height:1.42857;
-}
 
 p, ul, ol, pre {
     margin:0 0 1.42857em;

@@ -1,15 +1,54 @@
-html, #services {
-    background: #2d2d2e;
-    color: #ededed
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway-regular-webfont.eot');
+    src: url('raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('raleway-regular-webfont.woff') format('woff'),
+    url('raleway-regular-webfont.ttf') format('truetype'),
+    url('raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OptimaThinRegular';
+    src: local('OptimaThinRegular'),
+    src: url('optima-webfont.eot'); /*ie9*/
+    src: url('optima-webfont.eot?iefix'), /*ie6-ie8*/
+    url('optima-webfont.woff') format('woff'), /*modern browsers*/
+    url('optima-webfont.ttf') format('truetype'), /*safari, etc*/
+    url('optima-webfont.svg') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'oxygenregular';
+    src: url('oxygen-webfont.eot');
+    src: url('oxygen-webfont.eot?#iefix') format('embedded-opentype'),
+    url('oxygen-webfont.woff') format('woff'),
+    url('oxygen-webfont.ttf') format('truetype'),
+    url('oxygen-webfont.svg#oxygenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    background: #2d2d2e url("../images/dark-texture.png");
 }
 
 body {
     background: url("../images/points-bg.png") no-repeat 50% 0;
+    color: #222222;
+    font: 1.6em/1.25 oxygenregular,ralewayregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+strong { font-weight: 700 }
 
 #main, #hero, #services div:first-child, #contact div:first-child, #nav, #footer {
     max-width: 880px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #main {
@@ -17,13 +56,57 @@ body {
 }
 
 #services, #contact {
-	padding:1.66667em 0;
-	min-height:350px;
+    min-height:350px;
+    padding:1.66667em 0;
+    color: #ccc;
+}
+
+#services div:first-child > div, #contact div:first-child > div {
+    float: right;
+    width:70%;
+}
+
+#services li span, #contact li span {
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}
+
+#services li strong, #contact li strong {
+    display: inline-block;
+    font-size: 1.125em;
+    margin-right: 3%;
+    vertical-align: top;
+    width: 32%;
+    /*display: block;*/
+}
+
+#services ul li, #contact ul li {
+    margin-bottom: 1.6667em;
 }
 
 #contact {
-	background:#336699;
+	background-color:#336699;
+    background-image: url("../images/blue-texture.png");
 }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    html, #services, #contact {
+        background-size: 200px 200px;
+    }
+
+    html {
+        background-image: url("../images/dark-texture-2x.png");
+    }
+
+    #services {
+        background-image: url("../images/dark-texture-2x.png");
+    }
+    #contact {
+        background-image: url("../images/blue-texture-2X.png");
+    }
+}
+
 #hero {
     text-align: center;
 }
@@ -33,9 +116,13 @@ body {
 }
 
 #nav {
-    width: 100%;
+    background: url("../images/dark-texture.png") repeat scroll 0 0 #2A2A2A;
+    margin-bottom: 1.66667em;
+    max-width: 100000px;
+    position: fixed;
     text-align: center;
-    margin-bottom: 1.66667em
+    width: 100%;
+    opacity: .5;
 }
 
 #nav ul {

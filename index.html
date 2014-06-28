@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Some Test</title>
+    <title>Singer Legal</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Singer Legal">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <!-- Core CSS -->
     <link href="assets/css/base.css" rel="stylesheet" type="text/css">
     <link href="assets/css/presentation.css" rel="stylesheet" type="text/css">
@@ -22,12 +27,38 @@
     <div id="hero"><img src="assets/images/attorneys.png"></div>
 </div>
 <div id="services">
-	<div>
-	    <p>Services</p>
-	</div>
+    <div>
+        <div>
+            <h2>Our areas of expertise in the law</h2>
+
+            <p>We have simplified the definition of each service to help you better understand the services our law firm
+                offers. Please don't hesitate to contact our office if you have any questions.</p>
+            <ul>
+                <li><strong>Probate Estates</strong><span>Upon the death of an individual, to determine the most efficient and
+                    cost-effective probate procedure to handle the decedents estate and to facilitate the transfer of
+                    non-probate assets.</span>
+                </li>
+                <li><strong>Wills</strong><span>Drafting both simple and complex wills</span></li>
+                <li><strong>Living Trusts</strong><span>Preparation of a living trust during the lifetime of an individual, which will address management concerns during lifetime and hold and distribute trust assets after the death of the individual.</span>
+                </li>
+                <li><strong>Guardianship</strong><span>Preparing and filing with the probate court the necessary paperwork to take care of an individual and/or the individuals assets when the individual is no longer able to function.</span>
+                </li>
+                <li><strong>Durable Power of Attorney</strong><span>A written document which, during the lifetime of the individual, grants written authority to someone else to take care of an individuals business affairs.</span>
+                </li>
+                <li><strong>Care Planing</strong><span>Providing advice in regard to the estate of an individual needing long-term care planning.</span>
+                </li>
+                <li><strong>Living Wills and Health Care Powers of Attorney</strong><span>The living will is the advanced directive that indicates the person wants to be let go if he is terminally ill or permanently unconscious and nothing else can be done for him. The health care power of attorney is the document that provides when a person is not terminally ill or permanently unconscious, but cannot at that point in time make health care decisions for himself, then individuals may be appointed to make health care decisions or the person.</span>
+                </li>
+                <li><strong>Business Formation</strong><span>The formation of businesses, including but not limited to limited liability companies, corporations and partnerships.</span>
+                </li>
+                <li><strong>Business Representation</strong><span>Providing advice to businesses in regard to their continuation and business affairs.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div id="contact">
-	<div>
+<div>
 	    <p>Contact Us</p>
 	</div>
 </div>
@@ -39,13 +70,13 @@
     $(document).ready(function () {
         function scrollToAnchor(aid) {
             var aTag = $('#' + aid);
-            $('html,body').animate({scrollTop: aTag.offset().top}, 2000, 'swing');
+            $('html,body').animate({scrollTop: aTag.offset().top},'normal', 'swing');
         }
 
         $('a[href^=#]').on('click', function () {
             var href = $(this).attr('href').replace('#', '')
             scrollToAnchor(href);
-            return false;
+//            return false;
         });
     });
 </script>
