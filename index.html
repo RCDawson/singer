@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Singer Legal</title>
+    <title>Probate Attorneys Middletown, OH - Singer & McCausland Co., LPA</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Singer Legal">
+    <meta name="description" content="Singer & McCausland Co., LPA has taken pride in helping individuals deal with the loss of a family member with expert legal services. (513) 422-5419" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <!-- Core CSS -->
@@ -17,14 +17,24 @@
 </head>
 <body>
 <div id="nav">
-    <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-    </ul>
+    <div style="width:880px; margin:0 auto"><img src="assets/images/singer-logo-40.png">
+        <ul>
+            <li><a href="#home" class="current">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 </div>
+<div id="home"></div>
 <div id="main">
-    <div id="logo"><img src="assets/images/singer-logo.png"></div>
-    <div id="hero"><img src="assets/images/attorneys.png"></div>
+    <div id="logo"></div>
+    <div id="hero"><img src="assets/images/attorneys2.png"></div>
+    <div id="welcome">
+        <h2>Welcome<span> to the law office of Andrew N. Singer<br><span>& Patrick E. McCausland.</span></span>
+        <i>How can we help you?</i></h2>
+    </div>
+    <!--center=4625+N+Freeway%2C+Suite+301%0D%0AHouston%2C+Texas+77022&zoom=13&size=400x300&markers=color:0x79d743%7Clabel:%7C4625+N+Freeway%2C+Suite+301%0D%0AHouston%2C+Texas+77022-->
+    <!--http://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=12&size=400x400-->
 </div>
 <div id="services">
     <div>
@@ -58,15 +68,68 @@
     </div>
 </div>
 <div id="contact">
-<div>
-	    <p>Contact Us</p>
-	</div>
+    <div>
+        <div style="overflow: hidden">
+            <!--<span style="line-height:1.66667; width:20%;float:left">-->
+                <!--<p><img src="assets/images/logo-2.png" style="max-width: 100%;width: 100%"></p>-->
+            <!--</span>-->
+            <ul id="details" style="float: left; width: 50%">
+                <li style="line-height: 1.66667">
+                    <strong style="color:#eee; font-size:1.125em">Singer & McCausland Co., LPA</strong>
+                    <br>
+                    1733 South Breiel Blvd<br>
+                    Middletown, OH 45044
+                </li>
+                <li>
+                    <h5 style="color: #eee">(513) 422-5419</h5>
+                </li>
+                <li><a href="mailto:pmccausland@singerlegal.com" id="emailUs">Email Us</a></li>
+            </ul>
+            <ul style="float:right; width: 50%">
+                <li>
+                    <a target="_blank" href="https://maps.google.com/maps/place/1733+S+Breiel+Blvd%0D%0AMiddletown%2C+Ohio+45044"><img src="http://maps.googleapis.com/maps/api/staticmap?center=1733+S+Breiel+Blvd%0D%0AMiddletown%2C+Ohio+45044&zoom=15&markers=label:|1733+S+Breiel+Blvd%0D%0AMiddletown%2C+Ohio+45044&size=350x350&scale=2"  style="border:3px solid #225588; width:96%; border-radius:10px"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
-<div id="footer">
-    <p>Footer</p>
-</div>
+<!--<div id="footer">-->
+    <!--<p style="color: #999999">&copy;2014 Copyright Singer & McCausland Co., LPA. All Rights Reserved.</p>-->
+<!--</div>-->
 <script src="assets/js/jquery.js" type="text/javascript"></script>
 <script type="text/javascript">
+//    console.log(eTop - $(window).scrollTop()); //position of the ele w.r.t window
+    $('#nav>div img').css({visibility:'visible',display:'none'});
+    $(document).scroll(function() {
+        var scrollPos = $(document).scrollTop();
+        var servicesPos = $('#services').offset().top;
+        var contactPos = $('#contact').offset().top;
+        console.log($(document).scrollTop());
+        if (scrollPos > 80)
+        {
+            $('#nav>div img').fadeIn();
+        }
+        else
+        {
+            $('#nav>div img').fadeOut();
+        }
+        console.log(scrollPos + ' ' + servicesPos + ' ' + contactPos);
+
+    });
+//    $('#main').scroll(function() { //when window is scrolled
+//        var eTop = $('#main').offset().top; //get the offset top of the element
+////        console.log(eTop - $(window).scrollTop());
+//        if(eTop - $(window).scrollTop() < -80)
+//        {
+//            $('#nav>div img').animate({opacity:1});
+//        }
+//        else
+//        {
+//            $('#nav>div img').animate({opacity:0});
+//        }
+////        console.log(eTop  - $(window).scrollTop());
+//    });
+
     $(document).ready(function () {
         // Smooth scrolling to element IDs
         $('a[href^=#]:not([href=#])').on('click', function () {
